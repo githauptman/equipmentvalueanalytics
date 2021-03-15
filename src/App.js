@@ -1,15 +1,13 @@
+import React from 'react';
 import './App.css';
-import Button from 'react-bootstrap/Button';
+import CreateSeries from './components/createSeries';
 
-function App() {
-  return (
-    <div className="App">
-      <Button
-        onClick={()=> alert("Hello World")}>
-        Hello World Button
-      </Button>
-    </div>
-  );
+export default class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <CreateSeries />
+      </div>
+    );
+  }
 }
-
-export default App;
